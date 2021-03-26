@@ -38,8 +38,6 @@ class VM: ObservableObject {
     @Published var count = 0
     @Published var title = ""
     
-    weak var undo: UndoManager? = nil
-    
     func increment(undo: UndoManager?) {
         count += 1
         
